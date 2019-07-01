@@ -1,0 +1,17 @@
+default:
+  close:
+    comment: ⚠️ This has been marked to be closed in $DELAY.
+    delay: 10000
+labels:
+  duplicate: close
+  wontfix: close
+  invalid: close
+  "squash when passing": merge
+  "rebase when passing": merge
+  "merge when passing": merge
+comments: []
+commits:
+  - action: label
+    pattern: /merge when passing/i
+    labels:
+      - merge when passing
