@@ -1,7 +1,7 @@
 default:
   close:
     comment: ⚠️ This has been marked to be closed in $DELAY.
-    delay: 10000
+    delay: 604800000 # 7 days
 labels:
   duplicate: close
   wontfix: close
